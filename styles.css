@@ -7,6 +7,45 @@ body {
     padding: 0;
 }
 
+/* Responsif untuk Layar Lebar (Desktop) */
+@media (min-width: 1024px) {
+    header {
+        padding: 20px 30px;
+    }
+    .hero {
+        padding: 100px 20px;
+    }
+}
+
+/* Responsif untuk Layar Sedang (Tablet) */
+@media (max-width: 1024px) and (min-width: 768px) {
+    header {
+        padding: 15px 20px;
+    }
+    .hero h1 {
+        font-size: 36px;
+    }
+    .cta-btn {
+        padding: 12px 25px;
+    }
+}
+
+/* Responsif untuk Layar Kecil (Mobile) */
+@media (max-width: 767px) {
+    header {
+        padding: 10px 15px;
+    }
+    .hero h1 {
+        font-size: 28px;
+    }
+    .cta-btn {
+        padding: 10px 20px;
+    }
+    .fitur-image img {
+        width: 100%;
+    }
+}
+
 header {
     background-color: #1a1a1a;
     color: #ffcc00;
