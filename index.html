@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUBG Mobile Official</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f4f6;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #1e1e1e;
+            color: rgb(255, 255, 255);
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        section {
+            padding: 40px 20px;
+            display: none; 
+        }
+        section.active {
+            display: block; 
+        }
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background-image: url('background pubg.jpg'); 
+            background-size: cover;
+            color: white;
+            background-position: center;
+        }
+        .cta-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #ffcc00;
+            color: #1e1e1e;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #1e1e1e;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">🎮 PUBG Mobile</div>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('beranda')">Beranda</a></li>
+                <li><a href="#" onclick="showSection('fitur')">Fitur</a></li>
+                <li><a href="#" onclick="showSection('download')">Download</a></li>
+                <li><a href="#" onclick="showSection('kontak')">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Beranda -->
+    <section id="beranda" class="active">
+        <div class="hero">
+            <h1>Selamat Datang di web PUBG Mobile</h1>
+            <p>Mainkan lah game pubg mobile sekarang juga, dan raihlah wwcd.</p>
+            <a href="#" onclick="showSection('download')" class="cta-btn">Download Sekarang</a>
+        </div>
+    </section>
+
+    <!-- Fitur -->
+    <section id="fitur">
+        <h1>Fitur PUBG Mobile</h1>
+        <p>PUBG Mobile menawarkan banyak fitur menarik untuk pengalaman bermain yang seru:</p>
+        <ul>
+            <li><strong>Mode Battle Royale:</strong> Bertarung hingga menjadi satu-satunya yang tersisa.</li>
+            <li><strong>Grafik Berkualitas Tinggi:</strong> Pengalaman visual yang luar biasa dengan desain 3D realistis.</li>
+            <li><strong>Tim dan Kerjasama:</strong> Bermain bersama teman atau bertarung dalam tim untuk kemenangan.</li>
+            <li><strong>Update Berkala:</strong> Konten baru, event, dan senjata untuk setiap musim.</li>
+        </ul>
+
+        <div class="fitur-image">
+            <img src="lathif1vs4.jpg" alt="PUBG Mobile Gameplay" width="100%" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);">
+        </div>
+        
+        <h2>Menonton PUBG Mobile Gameplay</h2>
+        <p>Berikut adalah video gameplay player pubg mobile </p>
+        <p>player name : Lathif1vs4</p>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/taaUX0OCPqg?si=uHjRZDWC5jS6Rq7P" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </div>
+    
+    </section>
+
+    <!-- Download -->
+    <section id="download">
+        <h1>Download PUBG Mobile</h1>
+        <p>PUBG Mobile tersedia di berbagai platform:</p>
+        <ul>
+            <li><a href="https://play.google.com/store/apps/details?id=com.tencent.ig" target="_blank">Download di Google Play</a></li>
+            <li><a href="https://apps.apple.com/us/app/pubg-mobile/id1330123889" target="_blank">Download di App Store</a></li>
+        </ul>
+    </section>
+
+    <!-- Kontak -->
+    <section id="kontak">
+        <h1>Hubungi Kami</h1>
+        <p>Email: <a href="mailto:maulayalathif@gmail.com">maulayalathif@gmail.com</a></p>
+        <p>Telepon: 085850345999</p>
+    </section>
+
+    <footer>
+        &copy; 2024 PUBG Mobile. Semua Hak Dilindungi. @Lathif
+    </footer>
+
+    <!-- JavaScript untuk Navigasi -->
+    <script>
+        function showSection(sectionId) {
+            // Sembunyikan semua section
+            document.querySelectorAll('section').forEach(section => {
+                section.classList.remove('active');
+            });
+            // Tampilkan section yang dipilih
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
