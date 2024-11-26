@@ -5,6 +5,9 @@ body {
     color: #fff;
     margin: 0;
     padding: 0;
+    overflow-y: auto;
+    height: 100vh;
+    max-height: 100vh;
 }
 
 /* Responsif untuk Layar Lebar (Desktop) */
@@ -122,6 +125,9 @@ section {
     text-align: center;
     background-color: #121212;
     border-top: 5px solid #ffcc00;
+    height: 80vh; 
+    overflow-y: auto; 
+    margin-bottom: 20px; 
 }
 
 section.active {
