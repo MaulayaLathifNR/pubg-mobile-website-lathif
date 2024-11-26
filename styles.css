@@ -209,3 +209,30 @@ ul li {
 ul li strong {
     color: #ffcc00;
 }
+
+#fitur, #download, #kontak {
+    height: 70vh; 
+    overflow-y: auto; 
+}
+
+  
+  #download {
+    background-image: url('https://github.com/MaulayaLathifNR/pubg-mobile-website-lathif/blob/main/images/downlad-background.jpg'); 
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    height: 70vh;
+    overflow-y: auto;
+    color: white;
+}
+
+
+#kontak {
+    background-image: url('https://github.com/MaulayaLathifNR/pubg-mobile-website-lathif/blob/main/images/kontak-background.jpg'); 
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    height: 70vh;
+    overflow-y: auto;
+    color: white;
+}
