@@ -217,8 +217,7 @@ ul li strong {
 
   
   #download {
-    background-image: url('https://github.com/MaulayaLathifNR/pubg-mobile-website-lathif/blob/main/images/downlad-background.jpg'); 
-    background-size: cover;
+    background-image: url('https://raw.githubusercontent.com/MaulayaLathifNR/pubg-mobile-website-lathif/main/images/downlad-background.jpg');
     background-position: center;
     padding: 60px 20px;
     height: 70vh;
@@ -228,7 +227,7 @@ ul li strong {
 
 
 #kontak {
-    background-image: url('https://github.com/MaulayaLathifNR/pubg-mobile-website-lathif/blob/main/images/kontak-background.jpg'); 
+    background-image: url('https://raw.githubusercontent.com/MaulayaLathifNR/pubg-mobile-website-lathif/main/images/kontak-background.jpg');
     background-size: cover;
     background-position: center;
     padding: 60px 20px;
