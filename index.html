@@ -315,19 +315,19 @@
     <p>Unduh PUBG Mobile untuk Android atau iOS dan rasakan sensasi permainan yang luar biasa!</p>
     <div class="download-buttons">
         <a href="https://play.google.com/store/apps/details?id=com.tencent.ig" target="_blank">
-                       <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play">
-            Google Play
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Google_Play_Store_logo_2015.svg" alt="Google Play" style="width: 150px; height: auto;"> Android
         </a>
-        <a href="https://apps.apple.com/us/app/pubg-mobile/id1330123889" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Download_on_the_App_Store_Badge.svg" alt="App Store">
-            App Store
+        <a href="https://apps.apple.com/us/app/pubg-mobile/id1331000149" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/App_Store_logo.svg" alt="App Store" style="width: 150px; height: auto;"> iOS
         </a>
     </div>
     <button class="back-to-home" onclick="showSection('beranda')">Kembali ke Beranda</button>
 </section>
 
-<!-- Kontak -->
-<section id="kontak">
+
+
+    <!-- Kontak -->
+    <section id="kontak">
     <h1>Hubungi Kami</h1>
     <p>Silakan kirimkan pesan Anda melalui formulir di bawah ini:</p>
     <form action="https://formspree.io/f/xwpqkqol" method="POST" class="kontak-form">
@@ -349,41 +349,21 @@
     <button class="back-to-home" onclick="showSection('beranda')">Kembali ke Beranda</button>
 </section>
 
-<footer>
-    &copy; 2025 PUBG WEBSITE @LathifKing.
-</footer>
+    <footer>
+        <p>&copy; 2024 PUBG Mobile. Semua Hak Dilindungi. @Lathifnr_</p>
+    </footer>
 
-<script>
-    function showSection(id) {
-        const sections = document.querySelectorAll('section');
-        sections.forEach(section => {
-            section.classList.remove('active');
-        });
-        document.getElementById(id).classList.add('active');
-
-        // Tutup dropdown saat navigasi dilakukan
-        document.getElementById('dropdown-menu').style.display = 'none';
-    }
-
-    function toggleDropdown() {
-        const dropdown = document.getElementById('dropdown-menu');
-        if (dropdown.style.display === 'block') {
-            dropdown.style.display = 'none';
-        } else {
-            dropdown.style.display = 'block';
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => section.classList.remove('active'));
+            document.getElementById(sectionId).classList.add('active');
         }
-    }
 
-    // Tutup dropdown jika klik di luar area menu
-    window.onclick = function(event) {
-        if (!event.target.matches('a')) {
-            const dropdown = document.getElementById('dropdown-menu');
-            if (dropdown && dropdown.style.display === 'block') {
-                dropdown.style.display = 'none';
-            }
+        function toggleDropdown() {
+            const dropdown = document.getElementById("dropdown-menu");
+            dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
         }
-    };
-</script>
-
+    </script>
 </body>
 </html>
