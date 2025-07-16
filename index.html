@@ -329,27 +329,28 @@
 <!-- Kontak -->
 <section id="kontak">
     <h1>Hubungi Kami</h1>
-    <p>Jika Anda memiliki pertanyaan atau saran, silakan hubungi kami melalui formulir di bawah ini:</p>
-    <form class="kontak-form">
-        <input type="text" placeholder="Nama" required><br><br>
-        <input type="email" placeholder="Email" required><br><br>
-        <textarea placeholder="Pesan Anda" rows="5" required></textarea><br><br>
-        <button type="submit" class="cta-btn">Kirim</button>
+    <p>Silakan kirimkan pesan Anda melalui formulir di bawah ini:</p>
+    <form action="https://formspree.io/f/xwpqkqol" method="POST" class="kontak-form">
+        <input type="text" name="nama" placeholder="Nama Anda" required><br><br>
+        <input type="email" name="email" placeholder="Email Anda" required><br><br>
+        <textarea name="pesan" rows="5" placeholder="Pesan Anda" required></textarea><br><br>
+        <button type="submit" class="cta-btn">Kirim Pesan</button>
     </form>
 
     <div class="kontak-sosial">
-        <h2>Ikuti Kami</h2>
+        <h3>Ikuti Kami</h3>
         <div class="social-icons">
-            <a href="https://facebook.com/PUBGMobile" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
-            <a href="https://instagram.com/pubgmobile" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram"></a>
-            <a href="https://youtube.com/pubgmobile" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733646.png" alt="YouTube"></a>
+            <a href="https://facebook.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+            <a href="https://instagram.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
+            <a href="https://twitter.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter"></a>
         </div>
     </div>
+    <br>
     <button class="back-to-home" onclick="showSection('beranda')">Kembali ke Beranda</button>
 </section>
 
 <footer>
-    &copy; 2025 PUBG Mobile Fan Website. Dibuat oleh Maulaya Lathif Nur Rohman (2205101119 - 5E).
+    &copy; 2025 PUBG WEBSITE @LathifKing.
 </footer>
 
 <script>
