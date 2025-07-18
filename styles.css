@@ -299,3 +299,16 @@ footer {
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.7);
     margin-top: 40px;
 }
+
+/* ===== NAV ICON SUPPORT (Font Awesome) ===== */
+nav ul li a i {
+    margin-right: 8px;
+    font-size: 18px;
+    vertical-align: middle;
+    transition: transform 0.3s ease;
+}
+
+nav ul li a:hover i {
+    transform: scale(1.2);
+}
+
