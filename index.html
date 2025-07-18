@@ -353,17 +353,31 @@
         <p>&copy; 2024 PUBG Mobile. Semua Hak Dilindungi. @Lathifnr_</p>
     </footer>
 
-    <script>
-        function showSection(sectionId) {
-            const sections = document.querySelectorAll('section');
-            sections.forEach(section => section.classList.remove('active'));
-            document.getElementById(sectionId).classList.add('active');
-        }
+  <script>
+    function showSection(sectionId) {
+        const sections = document.querySelectorAll('section');
+        sections.forEach(section => section.classList.remove('active'));
+        document.getElementById(sectionId).classList.add('active');
 
-        function toggleDropdown() {
-            const dropdown = document.getElementById("dropdown-menu");
-            dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+        // Tutup dropdown setelah klik
+        document.getElementById("dropdown-menu").style.display = "none";
+    }
+
+    function toggleDropdown() {
+        const dropdown = document.getElementById("dropdown-menu");
+        dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+    }
+
+    // Tutup dropdown jika klik di luar area menu
+    window.onclick = function(event) {
+        const menu = document.getElementById("dropdown-menu");
+        if (!event.target.matches('nav ul li a')) {
+            if (menu && menu.style.display === "block") {
+                menu.style.display = "none";
+            }
         }
-    </script>
+    }
+</script>
+
 </body>
 </html>
