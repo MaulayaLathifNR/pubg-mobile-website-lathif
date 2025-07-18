@@ -252,24 +252,21 @@
         }
 
     </style>
+    <!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <header>
         <div class="logo">🎮 PUBG Mobile</div>
-        <nav>
-            <ul>
-                <li><a href="#" onclick="toggleDropdown()">Beranda</a>
-                    <div id="dropdown-menu">
-                        <a href="#" onclick="showSection('fitur')">Fitur</a>
-                        <a href="#" onclick="showSection('download')">Download</a>
-                        <a href="#" onclick="showSection('kontak')">Kontak</a>
-                    </div>
-                </li>
-                <li><a href="#" onclick="showSection('fitur')">Fitur</a></li>
-                <li><a href="#" onclick="showSection('download')">Download</a></li>
-                <li><a href="#" onclick="showSection('kontak')">Kontak</a></li>
-            </ul>
-        </nav>
+      <nav>
+  <ul>
+    <li><a href="#" onclick="showSection('beranda')"><i class="fas fa-home"></i> Beranda</a></li>
+    <li><a href="#" onclick="showSection('fitur')"><i class="fas fa-crosshairs"></i> Fitur</a></li>
+    <li><a href="#" onclick="showSection('download')"><i class="fas fa-download"></i> Download</a></li>
+    <li><a href="#" onclick="showSection('kontak')"><i class="fas fa-envelope"></i> Kontak</a></li>
+  </ul>
+</nav>
+
     </header>
 
  <!-- Beranda -->
